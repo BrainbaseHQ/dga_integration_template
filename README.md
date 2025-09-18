@@ -25,3 +25,4 @@ For this step, you will need to fill out the python file in this repo. You must 
 
 
 
+Finally, ensure that each function is "safe". This means that I can put in an incorrect input (wrong vehicle, )

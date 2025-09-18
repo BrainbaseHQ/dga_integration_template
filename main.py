@@ -54,12 +54,25 @@ def get_availability(
     """
     pass
 
+def create_customer(
+        phone_number: str,
+        email: str | None = None,
+        first_name: str | None = None,
+        last_name: str | None = None,
+        vehicle: Vehicle | None = None,
+    ):
+    """Used for creating a new customer."""
+    pass
+
 def book_appointment(
         date_time: str,
         customer_phone_number: str,
         vehicle: Vehicle,
         services: list[str],
         advisor_id: str | None = None,
+        customer_email: str | None = None,
+        customer_first_name: str | None = None,
+        customer_last_name: str | None = None,
     ):
     """Used for booking a new appointment."""
 
@@ -75,4 +88,16 @@ def update_appointment(
     ):
     """Used for updating an existing appointment/rescheduling an appointment."""
 
+    pass
+
+def get_all_opcodes():
+    """Used for getting all opcodes for the dealership."""
+    pass
+
+def get_all_advisors():
+    """Used for getting all advisors for the dealership."""
+    pass
+
+def get_all_valid_vehicles():
+    """Used for getting all valid vehicles for the dealership."""
     pass
